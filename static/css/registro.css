@@ -1,0 +1,71 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8e1e7;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Cabecera */
+.main-header {
+    background-color: #ffccd6;
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.main-header h1 {
+    margin: 0;
+}
+
+/* Sección de registro */
+.registration-section {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Estilos de formulario */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Asegura que padding no afecte el ancho total */
+}
+
+/* Botón de envío */
+.submit-button {
+    background-color: #ff8a5c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #ffadcc;
+}

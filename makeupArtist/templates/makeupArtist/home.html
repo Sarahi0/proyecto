@@ -1,0 +1,66 @@
+{% load static %}
+{% load fontawesome_5 %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <title>Makeup Studio - Cortes Unisex Modernos</title>
+</head>
+<body>
+    <div class="container">
+        <header class="main-header">
+            <h1>Makeup Studio</h1>
+            <nav class="main-nav">
+                <a href="{% url 'registro' %}" class="nav-link">Registrarse</a>
+                <a href="#servicios" class="nav-link">Servicios</a>
+                <a href="#productos" class="nav-link">Productos</a>
+            </nav>
+        </header>
+
+        <section class="intro-section">
+            <h2>Bienvenidos a Makeup Studio</h2>
+            <p>Explora nuestros servicios y productos de primera calidad.</p>
+        </section>
+
+        <section class="services-section" id="servicios"> <!-- Agrega el ID para el enlace interno -->
+            <h2>Nuestros Servicios</h2>
+            {% for categoria in categorias %}
+                <div class="category">
+                    <i class="{{ categoria.icono }}"></i>
+                    <h3>{{ categoria.nombre }}</h3>
+                    <div class="services-list">
+                        {% for servicio in categoria.servicios.all %}
+                        <div class="service-card">
+                            <h4>{{ servicio.nombre }}</h4>
+                            <p>{{ servicio.descripcion }}</p>
+                            <span class="price">${{ servicio.precio }}</span>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endfor %}
+        </section>
+
+        <section class="products-section" id="productos"> <!-- Agrega el ID para el enlace interno -->
+            <h2>Nuestros Productos</h2>
+            <div class="products-list">
+                {% for producto in productos %}
+                <div class="product-card">
+                    <h4>{{ producto.nombre }}</h4>
+                    <p>{{ producto.descripcion }}</p>
+                    <span class="price">${{ producto.precio }}</span>
+                    <span>Stock: {{ producto.stock }}</span>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+
+        <footer class="main-footer">
+            <p>&copy; {{ current_year }} Makeup Studio. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>

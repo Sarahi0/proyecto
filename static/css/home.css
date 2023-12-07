@@ -1,0 +1,277 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8e1e7; /* Fondo suave de color rosa */
+    color: #333;
+    transition: background-color 0.3s ease; /* Transición de color de fondo suave */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Cabecera */
+.main-header {
+    background-color: #ffccd6; /* Tono rosa pálido */
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.main-header h1 {
+    margin: 0;
+}
+
+/* Navegación */
+.main-nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.nav-link {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Transición de color suave al pasar el mouse */
+}
+
+.nav-link:hover {
+    color: #f8e1e7; /* Cambia el color al pasar el mouse a un tono de fondo más suave */
+}
+
+/* Sección de introducción */
+.intro-section {
+    padding: 20px 0;
+    background-color: #f8e1e7; /* Fondo suave de color rosa */
+    text-align: center;
+}
+
+/* Sección de servicios */
+.services-section {
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.category {
+    margin-bottom: 20px;
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.service-card {
+    background-color: #ffccd6; /* Tono rosa pálido */
+    border: 1px solid #ddd;
+    padding: 20px; /* Espacio adicional */
+    margin: 20px; /* Espacio adicional */
+    flex-basis: calc(30% - 40px); /* Espacio adicional entre los elementos */
+    text-align: center;
+    transition: background-color 0.3s ease; /* Transición de color de fondo suave */
+}
+
+.service-card h4 {
+    margin-top: 20px; /* Espacio adicional en la parte superior del título */
+    background-color: #f8e1e7; /* Color de fondo suave para el título */
+    padding: 10px; /* Espacio adicional alrededor del título */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.service-card:hover {
+    background-color: #ffadcc; /* Cambia el color de fondo al pasar el mouse */
+}
+
+/* Sección de productos */
+.products-section {
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-card {
+    background-color: #ffccd6; /* Tono rosa pálido */
+    border: 1px solid #ddd;
+    padding: 20px; /* Espacio adicional */
+    margin: 20px; /* Espacio adicional */
+    flex-basis: calc(30% - 40px); /* Espacio adicional entre los elementos */
+    text-align: center;
+    transition: background-color 0.3s ease; /* Transición de color de fondo suave */
+}
+
+.product-card h4 {
+    margin-top: 20px; /* Espacio adicional en la parte superior del título */
+    background-color: #f8e1e7; /* Color de fondo suave para el título */
+    padding: 10px; /* Espacio adicional alrededor del título */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.product-card:hover {
+    background-color: #ffadcc; /* Cambia el color de fondo al pasar el mouse */
+}
+
+/* Pie de página */
+.main-footer {
+    background-color: #ffccd6; /* Tono rosa pálido */
+    color: #333;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+/* Sección de servicios */
+.services-section {
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.services-section h2 {
+    background-color: #ffccd6; /* Fondo de caja para el título */
+    display: inline-block; /* Para que el fondo de caja se ajuste al texto */
+    padding: 10px 20px; /* Espacio adicional dentro del fondo de caja */
+    border-radius: 10px; /* Bordes redondeados para el fondo de caja */
+    margin: 0; /* Eliminar el margen predeterminado del título */
+}
+
+.category {
+    margin-bottom: 40px; /* Espacio adicional entre las categorías */
+    padding: 20px; /* Espacio adicional dentro de las categorías */
+    border-radius: 10px; /* Bordes redondeados para las categorías */
+    transition: background-color 0.3s ease; /* Transición de color de fondo suave */
+    text-align: center; /* Centrar el texto */
+}
+
+.category h3 {
+    background-color: #ffccd6; /* Tono rosa pálido de fondo para el texto */
+    padding: 10px; /* Espacio adicional dentro del texto */
+    border-radius: 10px; /* Bordes redondeados para el texto */
+    margin: 0; /* Eliminar el margen predeterminado */
+}
+
+.category img {
+    width: 100%;
+    height: auto;
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.service-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px;
+    flex-basis: calc(30% - 40px);
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.service-card h4 {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ffccd6;
+    margin-bottom: 10px;
+}
+
+.service-card:hover {
+    background-color: #ffadcc;
+}
+
+/* Sección de productos */
+.products-section {
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.products-section h2 {
+    background-color: #ff8a5c; /* Cambia el color de fondo para resaltarlo */
+    display: inline-block;
+    padding: 15px 20px; /* Aumenta el padding para mayor espacio */
+    border-radius: 10px;
+    margin: 0;
+    color: #fff; /* Cambia el color de texto para que sea legible */
+    margin-left: 20px; /* Desplaza hacia la derecha */
+}
+
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Categorías de productos */
+.product-card {
+    background-color: #f9f9f9; /* Reduzca el fondo de las categorías */
+    border: 1px solid #ddd;
+    padding: 10px; /* Agrega espacio interno */
+    margin: 10px;
+    flex-basis: 30%;
+    text-align: center;
+}
+
+.product-card h4 {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ffccd6;
+    margin-bottom: 10px;
+}
+
+.product-card:hover {
+    background-color: #ffadcc;
+}
+
+/* Sección de servicios */
+.services-section {
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.services-section h2 {
+    background-color: #ff8a5c; /* Cambia el color de fondo para resaltarlo */
+    display: inline-block;
+    padding: 15px 20px; /* Aumenta el padding para mayor espacio */
+    border-radius: 10px;
+    margin: 0;
+    color: #fff; /* Cambia el color de texto para que sea legible */
+    margin-left: 20px; /* Desplaza hacia la derecha */
+}
+
+/* Categorías de servicios */
+.category {
+    margin-bottom: 20px;
+    background-color: #f9f9f9; /* Reduzca el fondo de las categorías */
+    padding: 10px; /* Agrega espacio interno */
+}
+
+/* Resto de los estilos permanecen iguales */
+
+/* Sección de productos */
+.products-section {
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.products-section h2 {
+    background-color: #ff8a5c; /* Cambia el color de fondo para resaltarlo */
+    display: inline-block;
+    padding: 15px 20px; /* Aumenta el padding para mayor espacio */
+    border-radius: 10px;
+    margin: 0;
+    color: #fff; /* Cambia el color de texto para que sea legible */
+}

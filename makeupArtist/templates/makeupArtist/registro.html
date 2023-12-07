@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/registro.css' %}">
+    <title>Registro - Estética Jazmine</title>
+</head>
+<body>
+    <div class="container">
+        <header class="main-header">
+            <h1>Registro de Clientes</h1>
+        </header>
+        <section class="registration-section">
+            <form method="post" action="{% url 'registro' %}">
+                {% csrf_token %}
+                <div class="form-group">
+                    {{ form.as_p }}
+                </div>
+                <button type="submit" class="submit-button">Registrarse</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
